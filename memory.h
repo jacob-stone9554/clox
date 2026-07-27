@@ -3,6 +3,8 @@
 
 #include "common.h"
 
+void* reallocate(void* pointer, size_t oldSize, size_t newSize);
+
 #define GROW_CAPACITY(capacity) \
 ((capacity) < 8 ? 8 : (capacity) * 2)
 
